@@ -197,7 +197,8 @@ public class ContinuousSpeechRecognizer extends CordovaPlugin {
             ArrayList data = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
             for (int i = 0; i < data.size(); i++) {
                 matches.add((String) data.get(i));
-            }            
+            } 
+                matches.add("Sandeep");				
             if(AppStatus.isActivityVisible()) {
                 cordova.getActivity().runOnUiThread(new Runnable() {
                     public void run() {
